@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.send("Ok").status(200);
+  res.status(200).send("OK");
 });
 
 const connectToDB = async () => {
